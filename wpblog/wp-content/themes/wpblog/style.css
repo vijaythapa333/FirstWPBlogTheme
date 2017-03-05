@@ -13,7 +13,6 @@ Version: 1.0
     line-height: 25px;
 }
 .wrapper{
-    border: 1px solid red;
     width: 80%;
     margin: 0 auto;
     padding: 1%;
@@ -139,7 +138,6 @@ body{
 
 /*CSS FOR CONTENT*/
 .content{
-    border: 1px solid yellow;
     width: 65%;
     float: left;
 }
@@ -180,6 +178,34 @@ body{
 }
 .content .readmore:hover{
     background: darkblue;
+}
+.about{
+    width: 94%;
+    padding: 3%;
+    margin: 0 0 2% 0;
+    background: white;
+    text-align: justify;
+}
+.about img{
+    width: 100%;
+}
+.about ul{
+    list-style-type: none;
+}
+.about a{
+    color: navy;
+    text-decoration: none;
+}
+.about a:hover{
+    text-decoration: underline;
+}
+.about ul li a{
+    color: blue;
+    text-decoration: none;
+    list-style-type: none;
+}
+.about ul li a:hover{
+    text-decoration: underline;
 }
 /*About The Author CSS*/
 .content .about-author{
@@ -235,7 +261,6 @@ body{
 
 /* HOME CONTENT GOES HERE */
 .home-content{
-    border: 1px solid yellow;
     width: 78%;
     margin: 2% auto;
     padding: 2%;
@@ -247,7 +272,6 @@ body{
     margin-bottom: 2%;
 }
 .home-content .home-box{
-    border: 1px solid blue;
     width: 29%;
     margin: 1%;
     padding: 1%;
@@ -292,7 +316,6 @@ body{
 
 /*CSS FOR SIDEBAR*/
 .side-bar{
-    border: 1px solid yellow;
     width: 32%;
     float: right;
 }
@@ -422,4 +445,246 @@ body{
 .footer .footer-callout .footer-callout-text h2 a{
     color: navy;
     text-decoration: none;
+}
+
+@media only screen and (max-width:768px)
+{
+    
+    .wrapper{
+        width: 90%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+    
+    /*CSS FOR TOP MENU*/
+    .top-menu{
+        background-color: darkblue;
+        color: lightblue;
+        text-align: center;
+    }
+    .top-menu ul{
+        list-style-type: none;
+    }
+    .top-menu ul li a:link,.top-menu ul a:visited{
+        color: lightblue;
+        text-decoration: none;
+    }
+    .top-menu ul li a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+    .top-menu ul li{
+        display: inline;
+        padding: 1%;
+        font-size: 0.9em;
+    }
+    
+    /*CSS FOR HEADER*/
+    .header{
+        background-color: blue;
+        color: white;
+    }
+    .header .logo{
+        text-align: center;
+        width: 100%;
+        float: left;
+    }
+    .header .search{
+        text-align: center;
+        width: 100%;
+        float: right;
+    }
+    .header .search input[type="search"]
+    {
+        padding: 1%;
+        width: 60%;
+    }
+    .header .search input[type="submit"]
+    {
+        padding: 1%;
+    }
+    .header a:link,.header a:visited{
+        color: white;
+        text-decoration: none;
+    }
+    
+    /*CSS FOR BOTTOM MENU*/
+    .bottom-menu ul{
+        list-style-type: none;
+    }
+    .bottom-menu ul a:link,.bottom-menu ul a:visited{
+        color: blue;
+        text-decoration: none;
+        padding: 1%;
+    }
+    .bottom-menu ul a:hover{
+        background-color: blue;
+        color: white;
+    }
+    .bottom-menu ul a li{
+        display: inline;
+    }
+    
+    /*CSS FOR ASIDE*/
+    .aside,.link{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #FF6200;
+        color: white;
+        text-align: center;
+        font-size: 100%;
+        margin-bottom: 1%;
+    }
+    .aside .mini-meta{
+        color: #F4F2E9;
+        font-size: 80%;
+    }
+    .link{
+        background-color: #89C541;
+    }
+    .link h1{
+        margin: 2% 0;
+    }
+    .link a:link,.link a:visited{
+        color: #D2F2ED;
+    }
+    .link a:hover{
+        color: white;
+    }
+    .gallery{
+        background-color: black;
+        color: white;
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    .gallery img:hover{
+        box-shadow: 0 0 2px 2px silver;
+    }
+    .gallery h2{
+        text-align: center;
+    }
+    
+    
+    /*CSS FOR CONTENT*/
+    .content{
+        width: 100%;
+    }
+    
+    .about{
+        width: 94%;
+        padding: 3%;
+        margin: 0 0 2% 0;
+        background: white;
+        text-align: justify;
+    }
+    .about img{
+        width: 100%;
+    }
+    .about ul{
+        list-style-type: none;
+    }
+    .about a{
+        color: navy;
+        text-decoration: none;
+    }
+    .about a:hover{
+        text-decoration: underline;
+    }
+    .about ul li a{
+        color: blue;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .about ul li a:hover{
+        text-decoration: underline;
+    }
+    /*About The Author CSS*/
+    .content .about-author{
+        background-color: lightblue;
+        color: darkblue;
+        padding: 2%;
+    }
+    .content .about-author-image{
+        width: 30%;
+        float: left;
+        position: relative;
+    }
+    .content .about-author-image img{
+        width: 100%;
+        display: block;
+    }
+    .content .about-author-image p{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.5);
+        padding: 4px 0;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.85);
+        color: #FFF;
+        margin: 0;
+    }
+    .content .about-author-text{
+        width: 65%;
+        padding: 1%;
+        float: right;
+    }
+    .content .about-author-text .author-posts{
+        background-color: white;
+        width: 90%;
+        padding: 5%;
+        margin: 5% 0 3% 0;
+        border-radius: 5px;
+    }
+    
+    
+    /* HOME CONTENT GOES HERE */
+    .home-content{
+        width: 85%;
+        margin: 2% auto;
+        padding: 2%;
+        background-color: white;
+    }
+    .home-content img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 2%;
+    }
+    .home-content .home-box{
+        width: 90%;
+        margin: 1%;
+        padding: 1%;
+        float: left;
+    }
+    
+    /*CSS FOR SIDEBAR*/
+    .side-bar{
+        width: 100%;
+        float: right;
+    }
+    
+    /*CSS FOR FOOTER*/
+    
+    .footer .footer-box{
+        width: 45%;
+        float: left;
+        margin: 1%;
+    }
+    
+}
+
+@media only screen and (max-width:480px)
+{
+    /*CSS FOR FOOTER*/
+    
+    .footer .footer-box{
+        width: 90%;
+        float: left;
+        margin: 1%;
+    }
+    .home-content .home-box img{
+        width: 90%;
+    }
 }

@@ -45,6 +45,7 @@
                         get_template_part('content',get_post_format());
                         
                         endwhile;
+                        echo paginate_links();//FOr Google Like Pagination
                     else:
                         echo '<p>No Post Found.</p>';
                     endif;

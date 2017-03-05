@@ -10,6 +10,10 @@
                         get_template_part('content',get_post_format());
                         
                         endwhile;
+                        //For Pagination
+                        //previous_posts_link();//FOr Previous Posts
+                        //next_posts_link();//FOr Next Posts
+                        echo paginate_links();//FOr Google Like Pagination
                     else:
                         echo '<p>No Post Found.</p>';
                     endif;
